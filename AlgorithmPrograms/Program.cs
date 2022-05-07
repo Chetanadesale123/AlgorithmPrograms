@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Welcome to Algorithm ");
         bool end = true;
-        Console.WriteLine("1. Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4. End the Program");
+        Console.WriteLine("1. Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute :");
@@ -35,6 +35,15 @@ class Program
                     bubblesort.Bubble_sort();
                     break;
                 case 4:
+                    MergeSort mergesort = new MergeSort();
+                    int[] arr2 = { 12, 11, 13, 5, 6, 7 };
+                    Console.WriteLine("Given Array");
+                    mergesort.printArray(arr2);
+                    mergesort.Sorting(arr2, 0, arr2.Length - 1);
+                    Console.WriteLine("\nSorted array");
+                    mergesort.printArray(arr2);
+                    break;
+                case 5:
                     end = false;
                     break;
                 default:
