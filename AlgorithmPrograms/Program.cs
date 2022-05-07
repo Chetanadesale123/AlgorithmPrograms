@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Welcome to Algorithm ");
         bool end = true;
-        Console.WriteLine("1. Binary Search \n 2. End the Program");
+        Console.WriteLine("1. Binary Search \n 2.Insertion Sort \n 3. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute :");
@@ -20,8 +20,6 @@ class Program
                     Console.WriteLine("Enter a words to search");
                     string x = Console.ReadLine();
                     BinarySearch search = new BinarySearch();
-
-
                     int result = search.binarySearch(arr, x);
                     if (result == -1)
                         Console.WriteLine("Element not present");
@@ -29,6 +27,10 @@ class Program
                         Console.WriteLine("Element found at " + "index " + result);
                     break;
                 case 2:
+                    InsertionSort sort = new InsertionSort();
+                    sort.Insertion();
+                    break;
+                case 3:
                     end = false;
                     break;
                 default:
