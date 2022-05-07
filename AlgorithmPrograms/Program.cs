@@ -45,9 +45,9 @@ class Program
                     break;
                 case 5:
                     AnagramDetection anagram = new AnagramDetection();
-                    string first_Word = "listen";
-                    string second_Word = "silent";
-                    anagram.IsAnagram(first_Word, second_Word);
+                    string wordOne = "listen";
+                    string wordTwo = "silent";
+                    anagram.IsAnagram(wordOne, wordTwo);
                     break;
                 case 6:
                     end = false;

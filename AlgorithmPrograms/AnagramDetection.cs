@@ -9,23 +9,23 @@ namespace AlgorithmPrograms
     public class AnagramDetection
     {
         int count = 0;
-        public void IsAnagram(string firstWord, string secondWord)
+        public void IsAnagram(string wordOne, string wordTwo)
         {
-            int first_Length = firstWord.Length;
-            int second_Length = secondWord.Length;
+            int string1 = wordOne.Length;
+            int string2 = wordTwo.Length;
 
             bool status = true;
-            if (first_Length != second_Length)
+            if (string1 != string2)
             {
                 status = false;
             }
             else
             {
-                char[] first_array = firstWord.ToLower().ToCharArray();
-                char[] second_array = secondWord.ToLower().ToCharArray();
+                char[] first_array = wordOne.ToLower().ToCharArray();
+                char[] second_array =wordTwo.ToLower().ToCharArray();
                 Array.Sort(first_array);
                 Array.Sort(second_array);
-                for (int i = 0; i < first_Length && first_Length == second_Length; i++)
+                for (int i = 0; i < string1 && string1 == string2; i++)
                 {
                     if (first_array[i] != second_array[i])
                     {
@@ -35,11 +35,11 @@ namespace AlgorithmPrograms
             }
             if (count == 0)
             {
-                Console.WriteLine(firstWord + " " + "and" + " " + secondWord + " " + "  word is Anagram");
+                Console.WriteLine(wordOne + " " + wordTwo + " " + "  word is Anagram");
             }
             else
             {
-                Console.WriteLine(firstWord + " " + "and" + " " + secondWord + " " + "word is not Anagram");
+                Console.WriteLine(  " " + "word is not Anagram");
             }
 
         }
