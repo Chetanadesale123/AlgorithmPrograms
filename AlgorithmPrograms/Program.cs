@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Welcome to Algorithm ");
         bool end = true;
-        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. Prime no \n 7. primePalindrome \n 8.Generic Sorting \n 9. End the Program");
+        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. Prime no \n 7. primePalindrome \n 8.Generic Sorting \n 9. Find Your Number \n 10. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute :");
@@ -77,6 +77,11 @@ class Program
                     genericsort.InsertionSort<string>(arr5);
                     break;
                 case 9:
+                    FindNo findno = new FindNo();
+                    Console.WriteLine(" guess no between 0 to 160 ");
+                    Console.WriteLine("Guess no is " + findno.NoIsFind());
+                    break;
+                case 10:
                     end = false;
                     break;
                 default:
