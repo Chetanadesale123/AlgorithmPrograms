@@ -8,17 +8,14 @@ namespace AlgorithmPrograms
 {
     public class InsertionSort
     {
-        public void Insertion()
+        public void Insertion(string[]names)
         {
-
-            string[] names = { "CoreJava", "Python", "Cpp", "javascript" };
             InsertSort(names);
             foreach (var item in names)
             {
                 Console.WriteLine(item);
             }
         }
-
         static void InsertSort(IComparable[] array)
         {
             int i, j;

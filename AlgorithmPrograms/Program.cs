@@ -28,7 +28,10 @@ class Program
                     break;
                 case 2:
                     InsertionSort sort = new InsertionSort();
-                    sort.Insertion();
+                    const string FILE_PATH1 = @"R:\Practice_problem_Bridgelabz\Algorithm\Utility\List.txt ";
+                    string words1 = File.ReadAllText(FILE_PATH1);
+                    string[] names = words1.Split(',');
+                    sort.Insertion(names);
                     break;
                 case 3:
                     BubbleSort bubblesort = new BubbleSort();
