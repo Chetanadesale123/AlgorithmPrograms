@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Welcome to Algorithm ");
         bool end = true;
-        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. Prime no \n 7. primePalindrome \n 8. End the Program");
+        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. Prime no \n 7. primePalindrome \n 8.Generic Sorting \n 9. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute :");
@@ -62,6 +62,21 @@ class Program
                     primepali.PrimePalim(num1, num2);
                     break;
                 case 8:
+                    GenericsForSorting genericsort = new GenericsForSorting();
+                    int[] arr3 = { 12, 11, 13, 5, 6, 7 };
+                    float[] arr4 = { 97.9f, 6.6f, 2.14f, 14.8f, 4.5f };
+                    string[] arr5 = { "cpp", "javascript", "python", "perl", "ruby" };
+                    genericsort.SelectionSort<int>(arr3);
+                    genericsort.SelectionSort<float>(arr4);
+                    genericsort.SelectionSort<string>(arr5);
+                    genericsort.BubbleSort<int>(arr3);
+                    genericsort.BubbleSort<float>(arr4);
+                    genericsort.BubbleSort<string>(arr5);
+                    genericsort.InsertionSort<int>(arr3);
+                    genericsort.InsertionSort<float>(arr4);
+                    genericsort.InsertionSort<string>(arr5);
+                    break;
+                case 9:
                     end = false;
                     break;
                 default:
