@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Welcome to Algorithm ");
         bool end = true;
-        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. End the Program");
+        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. Prime no \n 7. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute :");
@@ -50,6 +50,10 @@ class Program
                     Console.WriteLine(anagram.IsAnagram(wordOne, wordTwo));
                     break;
                 case 6:
+                    PrimeNo prime = new PrimeNo();
+                    prime.IsPrime();
+                    break;
+                case 7:
                     end = false;
                     break;
                 default:
