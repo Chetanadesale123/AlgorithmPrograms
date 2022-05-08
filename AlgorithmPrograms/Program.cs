@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Welcome to Algorithm ");
         bool end = true;
-        Console.WriteLine("1. Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. End the Program");
+        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute :");
@@ -47,7 +47,7 @@ class Program
                     AnagramDetection anagram = new AnagramDetection();
                     string wordOne = "listen";
                     string wordTwo = "silent";
-                    anagram.IsAnagram(wordOne, wordTwo);
+                    Console.WriteLine(anagram.IsAnagram(wordOne, wordTwo));
                     break;
                 case 6:
                     end = false;
