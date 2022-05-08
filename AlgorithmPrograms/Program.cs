@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Welcome to Algorithm ");
         bool end = true;
-        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. Prime no \n 7. End the Program");
+        Console.WriteLine(" \n 1.Binary Search \n 2.Insertion Sort \n 3. Bubble sort \n 4.Merge Sort \n 5. Anagram program \n 6. Prime no \n 7. primePalindrome \n 8. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute :");
@@ -54,6 +54,14 @@ class Program
                     prime.IsPrime();
                     break;
                 case 7:
+                    PrimePalindrome primepali = new PrimePalindrome();
+                    Console.WriteLine("Enter the lowe limit");
+                    int num1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter the higher limit");
+                    int num2 = Convert.ToInt32(Console.ReadLine());
+                    primepali.PrimePalim(num1, num2);
+                    break;
+                case 8:
                     end = false;
                     break;
                 default:
